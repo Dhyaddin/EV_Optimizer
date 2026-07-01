@@ -216,6 +216,3 @@ dimensionality); A\* matches DP's optimum but explores far fewer states on avera
 | `Theoretical_Analysis.md` | Correctness & complexity (Section iv) |
 | `EV_Optimizer_Final_Report.pdf` / `.docx` | The full consolidated report |
 | `Portfolio_and_Presentation_Script.md` | Presentation script |
-
-> *Note:* lecture `Topic*` slides, the Cormen textbook, and the project brief in this
-> folder are course‑provided reference material, not project deliverables.

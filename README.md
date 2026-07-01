@@ -8,7 +8,7 @@
 
 **Team:** Radhi · Dhiyauddin · Ariff · Iqmal
 
-**Run it:** `cd EV_Optimizer && python3 main.py` (pure Python standard library — no installs)
+**Run it:** `python3 main.py` (pure Python standard library — no installs)
 
 ---
 
@@ -57,7 +57,7 @@ For an EV the *cost of a stop* also depends on battery level, the non‑linear c
 taper, the queue, and battery wear — so this is a **multi‑objective optimisation**, not a
 shortest‑path lookup.
 
-📄 *Full write‑up:* `Smart_EV_Optimizer_Scenario.docx`
+📄 *Full write‑up:* see Section 2 of `EV_Optimizer_Final_Report.pdf`
 
 ---
 
@@ -125,7 +125,7 @@ heuristic = free‑flow remaining driving time (admissible)
 **Architecture** — one class per algorithm, all sharing a common `BaseSolver`:
 
 ```
-EV_Optimizer/
+.
 ├── main.py                          # runs the three demo scenarios
 └── ev_optimizer/
     ├── vehicle.py                   # battery + charging physics
@@ -139,7 +139,7 @@ EV_Optimizer/
         └── astar.py                 # AStarSolver
 ```
 
-**How to run:** `cd EV_Optimizer && python3 main.py`
+**How to run:** from the repository root, `python3 main.py`
 
 **Output — Scenario 1 (festive peak):**
 
@@ -208,11 +208,11 @@ dimensionality); A\* matches DP's optimum but explores far fewer states on avera
 
 | Path | Purpose |
 |---|---|
-| `EV_Optimizer/` | The runnable Python package (Section iii) |
-| `Smart_EV_Optimizer_Scenario.docx` | Problem scenario (Section i) |
-| `Algorithm_Comparison.md` | Paradigm comparison (Section ii) |
-| `Mathematical_Formulation_and_Pseudocode.md` | Formulation & pseudocode (Section ii) |
-| `Code_Walkthrough.md` | How the code works (Section iii) |
-| `Theoretical_Analysis.md` | Correctness & complexity (Section iv) |
-| `EV_Optimizer_Final_Report.pdf` / `.docx` | The full consolidated report |
+| `main.py` | Entry point — runs the three demo scenarios |
+| `ev_optimizer/` | The Python package (all solver classes) — Section iii |
+| `Algorithm_Comparison.md` | Paradigm comparison — Section ii |
+| `Mathematical_Formulation_and_Pseudocode.md` | Formulation & pseudocode — Section ii |
+| `Code_Walkthrough.md` | How the code works — Section iii |
+| `Theoretical_Analysis.md` | Correctness & complexity — Section iv |
 | `Portfolio_and_Presentation_Script.md` | Presentation script |
+| `EV_Optimizer_Final_Report.pdf` | The full consolidated report (scenario in Section 2) |
